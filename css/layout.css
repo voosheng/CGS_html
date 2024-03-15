@@ -1,0 +1,123 @@
+:root{
+    --cgs-primary:#244664;
+    --cgs-secondary:rgb(224, 158, 53);    
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    background-color: #EBF0F3;
+}
+.h_100{
+    height: 100%;
+}
+.h_90{
+    height: 90%;
+}
+.sidebar{
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: var(--cgs-secondary);
+    background-color: var(--cgs-primary);
+}
+.sidebar a{
+    color: #dddfef;
+    background-color: var(--cgs-primary);
+}
+.sidebar a:hover{
+    opacity: .6;
+}
+/* bs cover */
+.list-group-item{
+    border: 0;
+}
+.list-group-item:active,
+.list-group-item-action:focus
+{     
+    color: #ffffff;  
+    background-color: #536E87;
+}
+.list-group-item.active_k{
+    color: #ffffff;  
+    background-color: #536E87;
+}
+.content{
+    margin-left:240px;
+    height: 100%;
+}
+.header{
+    background-color: #ffffff;    
+}
+.topMenu{
+    background-color: #ffffff;  
+}
+.mainContent{
+    background-color: #ffffff;
+    height: 100%;
+}
+.table > :not(:last-child) > :last-child > *{
+    border-style: none;
+}
+.text_primary{
+    color: var(--cgs-primary);
+}
+.bg_primary{
+    background-color: var(--cgs-primary);
+}
+.bg_secondary{
+    background-color: var(--cgs-secondary);
+}
+.btn_secondary{
+    background-color: var(--cgs-secondary);
+    color: #ffffff;
+}
+.btn_secondary:hover{
+    color: #ffffff;
+    opacity: .8;
+}
+.bg_primary_light{
+    background-color: var(--cgs-primary);
+    /* opacity: .6; */   
+    background-color:  #cbd3dd;
+}
+.fs_7{
+    font-size: 14px;
+}
+.login{
+    height: 100vh;
+    background: url("/img/login_bg.png") no-repeat top center;
+}
+.login_content{
+    margin-top: 6%;
+    background-color: rgba(44, 88, 126, .6) ;
+    /* background-color: rgba(255, 255, 255, 0.6) ; */
+    padding-bottom: 70px;
+}
+.web_name{
+    color: #ffffff;
+    padding: 85px 0 35px 0;
+}
+.web_name h1{
+    font-size: 68px;    
+}
+.web_name p{
+    font-size: 18px;    
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+    right: 0;
+    line-height: 3rem;
+    background-color: #d7dce1;    
+}
+.graphs{
+   border: 2px solid #777;
+}
+.modal_xxl{
+    max-width: 1600px;
+}
