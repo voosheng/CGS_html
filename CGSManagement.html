@@ -50,15 +50,25 @@
                         <button class="btn btn-outline-primary" type="button">
                             <i class="bi bi-chevron-left"></i>返回</button>
                     </form> -->
-                    <div class="d-flex ">
+                  <div class="d-flex">
                         <div class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
-                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                            <input class="" type="search" placeholder="輸入名稱查詢" aria-label="Search">
+                            <div class="dropdown ms-2">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    查詢類別
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-outline-primary dropdown ms-2" type="submit">查詢</button>
                         </div>
-                        <button class="btn btn-primary ms-5" type="button">新增</button>
+                        <button class="btn btn-primary ms-5" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">上傳檔案</button>
                         <!-- <button class="btn btn-secondary ms-2" type="button">編輯</button> -->
                     </div>
-                </div>
             </nav>
             <div class="mainContent shadow pb-3 h_100">
                 <div class="">
