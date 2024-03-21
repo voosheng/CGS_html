@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGSlist</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="d-flex flex-column justify-content-between h_100">
+            <div>
+                    <div class="d-flex flex-column justify-content-center align-items-center py-3">
+                        <span class="fs-1">CGS</span>
+                        <span class="">即時監控系統</span>
+                    </div>
+                <a href="CGSMonitoringGraphs.html" class="list-group-item list-group-item-action ps-5 py-3 bg_primary" aria-current="true">CGS即時監控狀態</a>
+                <a href="CGSlist.html" class="list-group-item list-group-item-action ps-5 py-3 active_k" aria-current="true">CGS列表</a>
+                <a href="CGSManagement.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">CGS管理</a>
+                <a href="UploadInfoManagement" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">內容上傳管理</a>
+                <a href="UserManagement.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">使用者管理</a>
+                <a href="SystemInfo.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">系統資訊</a>
+                <a href="WebLog.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">系統使用紀錄</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="header">
+            <div class="container-fluid shadow-sm">
+                <div class="nav justify-content-end">
+                    <div class="dropdown">
+                        <a class="nav-link p-0 py-1 text_primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">登出</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-2 h_100">
+            <div class="topMenu">
+
+                <nav class="navbar bg-white">
+                    <div class="container-fluid justify-content-end ">
+                        <!-- <form class="">
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="bi bi-chevron-left"></i>返回</button>
+                        </form> -->
+                        <div class="d-flex ">
+                            <div class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                            </div>
+                            <!-- <button class="btn btn-primary ms-5" type="button">新增</button>
+                            <button class="btn btn-secondary ms-2" type="button">編輯</button> -->
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="mainContent shadow pb-3">
+                <div class="">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead>
+                        <tr class="text-gray bg_primary_light">
+
+                            <th scope="col" class="fs_7 fw-light "></th>
+                            <th scope="col" class="fs_7 fw-light ">名稱</th>
+                            <th scope="col" class="fs_7 fw-light col-5">位置</th>
+                            <th scope="col" class="fs_7 fw-light col-1 text-center">SIP Phone Number</th>
+                            <th scope="col" class="fs_7 fw-light text-center">Info box IP / 版本</th>
+                            <th scope="col" class="fs_7 fw-light text-center">Inter box IP / 版本</th>
+                            <th scope="col" class="fs_7 fw-light">狀態</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td scope="col" class=""><i class="bi bi-list"></i></td>
+                            <td scope="col" class="">阿里山森林鐵路車庫園區</td>
+                            <td scope="col" class="">
+                                <span class="d-inline">23.486352657355315,120.451301831</span>
+                                <span class="d-inline">嘉義市東區林森西路88888882號</span>
+                            </td>
+                            <td scope="col" class="text-center">#888888</td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.1.0</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.2.1</span>
+                            </td>
+                            <td scope="col" class="text-success">連線</td>
+                        </tr>
+                        <tr>
+                            <td scope="col" class=""><i class="bi bi-list"></i></td>
+                            <td scope="col" class="">阿里山森林鐵路車庫園區</td>
+                            <td scope="col" class="">
+                                <span class="d-inline">23.486352657355315,120.451301831</span>
+                                <span class="d-inline">嘉義市東區林森西路88888882號</span>
+                            </td>
+                            <td scope="col" class="text-center">#888888</td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.1.0</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.2.1</span>
+                            </td>
+                            <td scope="col" class="text-success">連線</td>
+                        </tr>
+                        <tr>
+                            <td scope="col" class=""><i class="bi bi-list"></i></td>
+                            <td scope="col" class="">阿里山森林鐵路車庫園區</td>
+                            <td scope="col" class="">
+                                <span class="d-inline">23.486352657355315,120.451301831</span>
+                                <span class="d-inline">嘉義市東區林森西路88888882號</span>
+                            </td>
+                            <td scope="col" class="text-center">#888888</td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.1.0</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                                <span class="d-inline me-2">192.168.1.252</span>
+                                <span class="d-inline">v.2.1</span>
+                            </td>
+                            <td scope="col" class="text-success">連線</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer">
+            <div class="d-flex justify-content-center">
+                City Guard Center@2024
+            </div>
+        </div> -->
+        </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
