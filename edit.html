@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>edit</title>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="./css/layout.css">
-    </head>
-    <body>
-        <div class="sidebar">
-            <div class="d-flex flex-column justify-content-between h_100">
-                <div>
-                    <div class="d-flex flex-column justify-content-center align-items-center py-3">
-                        <span class="fs-1">CGS</span>
-                        <span class="">即時監控系統</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="d-flex flex-column justify-content-between h_100">
+            <div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-3">
+                    <span class="fs-1">CGS</span>
+                    <span class="">即時監控系統</span>
+                </div>
+                <a href="CGSMonitoringGraphs.html" class="list-group-item list-group-item-action ps-5 py-3 bg_primary"
+                    aria-current="true">CGS即時監控狀態</a>
+                <a href="CGSlist.html" class="list-group-item list-group-item-action ps-5 py-3 "
+                    aria-current="true">CGS列表</a>
+                <a href="CGSManagement.html" class="list-group-item list-group-item-action ps-5 py-3 active_k"
+                    aria-current="true">CGS管理</a>
+                <a href="UploadInfoManagement" class="list-group-item list-group-item-action ps-5 py-3"
+                    aria-current="true">內容上傳管理</a>
+                <a href="UserManagement.html" class="list-group-item list-group-item-action ps-5 py-3"
+                    aria-current="true">使用者管理</a>
+                <a href="SystemInfo.html" class="list-group-item list-group-item-action ps-5 py-3"
+                    aria-current="true">系統資訊</a>
+                <a href="WebLog.html" class="list-group-item list-group-item-action ps-5 py-3"
+                    aria-current="true">系統使用紀錄</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="container-fluid shadow-sm">
+                <div class="nav justify-content-end">
+                    <div class="dropdown">
+                        <a class="nav-link p-0 py-1 text_primary dropdown-toggle" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">修改密碼</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">登出</a>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="CGSMonitoringGraphs.html" class="list-group-item list-group-item-action ps-5 py-3 bg_primary" aria-current="true">CGS即時監控狀態</a>
-                    <a href="CGSlist.html" class="list-group-item list-group-item-action ps-5 py-3 " aria-current="true">CGS列表</a>
-                    <a href="CGSManagement.html" class="list-group-item list-group-item-action ps-5 py-3 active_k" aria-current="true">CGS管理</a>
-                    <a href="UploadInfoManagement" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">內容上傳管理</a>
-                    <a href="UserManagement.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">使用者管理</a>
-                    <a href="SystemInfo.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">系統資訊</a>
-                    <a href="WebLog.html" class="list-group-item list-group-item-action ps-5 py-3" aria-current="true">系統使用紀錄</a>
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="header">
-                <div class="container-fluid shadow-sm">
-                    <div class="nav justify-content-end">
-                        <div class="dropdown">
-                            <a
-                                class="nav-link p-0 py-1 text_primary dropdown-toggle"
-                                href="#"
-                                role="button"
-                                id="dropdownMenuLink"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <i class="bi bi-person-circle fs-2"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="#">修改密碼</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">登出</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid mt-2">
-                <nav class="navbar bg-white border-bottom">
-                    <div class="container-fluid justify-content-between">
-                        <form class="">
-                            <a href="CGSManagement.html" class="btn btn-outline-primary" type="button">
-                                <i class="bi bi-chevron-left"></i>
-                                返回
-                            </a>
-                        </form>
-                        <!-- <div class="d-flex ">
+        <div class="container-fluid mt-2">
+            <nav class="navbar bg-white border-bottom">
+                <div class="container-fluid justify-content-between">
+                    <form class="">
+                        <a href="CGSManagement.html" class="btn btn-outline-primary" type="button">
+                            <i class="bi bi-chevron-left"></i>
+                            返回
+                        </a>
+                    </form>
+                    <!-- <div class="d-flex ">
                             <div class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
                                 <button class="btn btn-outline-primary" type="submit">Search</button>
@@ -70,155 +73,123 @@
                             <button class="btn btn-primary ms-5" type="button">新增</button>
                             <button class="btn btn-secondary ms-2" type="button">編輯</button>
                         </div> -->
-                    </div>
-                </nav>
-                <div class="mainContent shadow pb-3">
-                    <div class="container-fluid py-3">
-                        <div class="row ">
-                            <div class="col-10 pe-0">
-                                <form>
-                                    <div class="mb-3 row">
-                                        <label for="" class="col-sm-2 col-form-label">名稱</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="">
-                                        </div>
+                </div>
+            </nav>
+            <div class="mainContent shadow pb-3">
+                <div class="container-fluid py-3">
+                    <div class="row ">
+                        <div class="col-10 pe-0">
+                            <form>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-2 col-form-label">名稱</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="">
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label for="" class="col-sm-2 col-form-label">IP</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="">
-                                        </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-2 col-form-label">IP</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="">
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label for="" class="col-sm-2 col-form-label">位置</label>
-                                        <div class="col-sm-5">
-                                            <label for="inputState" class="form-label">縣市</label>
-                                            <select id="inputState" class="form-select">
-                                                <option selected>嘉義市</option>
-                                                <option>台北市</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <label for="inputState" class="form-label">區</label>
-                                            <select id="inputState" class="form-select">
-                                                <option selected>XX區</option>
-                                                <option>XX</option>
-                                            </select>
-                                        </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-2 col-form-label">位置</label>
+                                    <div class="col-sm-5">
+                                        <label for="inputState" class="form-label">縣市</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>嘉義市</option>
+                                            <option>台北市</option>
+                                        </select>
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label for="" class="col-sm-2 col-form-label"></label>
-                                        <div class="col-10">
-                                            <input
-                                                type="password"
-                                                class="form-control"
-                                                id=""
-                                                placeholder="輸入詳細地址"
-                                            >
+                                    <div class="col-sm-5">
+                                        <label for="inputState" class="form-label">區</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>XX區</option>
+                                            <option>XX</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">SIP Phone Number</label>
+                                    <label for="" class="col-2 col-form-label"></label>
+                                    <div class="col-10">
+                                        <input type="password" class="form-control" id="" placeholder="輸入詳細地址">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-2 col-form-label">SIP Phone Number</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">Info box IP</label>
+                                    <label for="" class="col-2 col-form-label">Info box IP</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">Info box 版本</label>
+                                    <label for="" class="col-2 col-form-label">Info box 版本</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">Inter box IP</label>
+                                    <label for="" class="col-2 col-form-label">Inter box IP</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">Inter box 版本</label>
+                                    <label for="" class="col-2 col-form-label">Inter box 版本</label>
                                     <div class="col-sm-10">
                                         <input type="" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">輪播影片清單</label>
+                                    <label for="" class="col-2 col-form-label">輪播影片清單</label>
                                     <div class="col-sm-10">
                                         <!-- Button trigger modal -->
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop"
-                                        >
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
                                             嘉義市政宣播放清單_1209
                                         </button>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">特殊固定影片</label>
+                                    <label for="" class="col-2 col-form-label">特殊固定影片</label>
                                     <div class="col-sm-10">
                                         <!-- Button trigger modal -->
-                                        <button
-                                            type="buttåon"
-                                            class="btn btn-outline-primary    "
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop"
-                                        >
+                                        <button type="buttåon" class="btn btn-outline-primary    "
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                             固定模組c
                                         </button>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="" class="col-sm-2 col-form-label">導覽資訊</label>
+                                    <label for="" class="col-2 col-form-label">導覽資訊</label>
                                     <div class="col-sm-10">
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                            <button
-                                                class="nav-link active"
-                                                id="nav-attraction-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-attraction"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-attraction"
-                                                aria-selected="false"
-                                            >景點管理</button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-food-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-food"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-food"
-                                                aria-selected="false"
-                                            >餐廳管理</button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-hotel-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-hotel"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-hotel"
-                                                aria-selected="false"
-                                            >住宿管理</button>
+                                            <button class="nav-link active" id="nav-attraction-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-attraction" type="button" role="tab"
+                                                aria-controls="nav-attraction" aria-selected="false">景點管理</button>
+                                            <button class="nav-link" id="nav-food-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-food" type="button" role="tab"
+                                                aria-controls="nav-food" aria-selected="false">餐廳管理</button>
+                                            <button class="nav-link" id="nav-hotel-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-hotel" type="button" role="tab"
+                                                aria-controls="nav-hotel" aria-selected="false">住宿管理</button>
+                                            <button class="nav-link" id="nav-game-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-game" type="button" role="tab"
+                                                aria-controls="nav-game" aria-selected="false">賽事管理</button>
+                                            <button class="nav-link" id="nav-esg-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-esg" type="button" role="tab"
+                                                aria-controls="nav-esg" aria-selected="false">ESG</button>
                                         </div>
                                         <div class="col">
                                             <div class="tab-content" id="nav-tabContent">
-                                                <div
-                                                    class="tab-pane fade show active"
-                                                    id="nav-attraction"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-attraction-tab"
-                                                >
+                                                <div class="tab-pane fade show active" id="nav-attraction"
+                                                    role="tabpanel" aria-labelledby="nav-attraction-tab">
                                                     <div class="card">
                                                         <div class="card-header">
                                                             機台號碼#1
@@ -228,7 +199,9 @@
                                                                 <div class="col-5">
                                                                     <a href="#" class="">
                                                                         <figure class="figure">
-                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的現在位置地圖">
+                                                                            <img src="./img/img_selection.png"
+                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                alt="上傳的現在位置地圖">
                                                                             <figcaption class="figure-caption">
                                                                                 現在位置地圖
                                                                             </figcaption>
@@ -237,7 +210,8 @@
                                                                 </div>
                                                                 <div class="col-7">
                                                                     <div class="mb-3 row">
-                                                                        <label for="" class="col-sm-2 col-form-label text-end">
+                                                                        <label for=""
+                                                                            class="col-2 col-form-label text-end">
                                                                             現在位置
                                                                         </label>
                                                                         <div class="col-sm-10">
@@ -257,8 +231,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的景點地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的景點地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 景點地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -267,8 +244,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -277,8 +257,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -287,8 +270,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -298,59 +284,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -365,8 +353,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的景點地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的景點地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 景點地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -375,8 +366,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -385,8 +379,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -395,8 +392,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -406,59 +406,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -473,8 +475,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的景點地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的景點地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 景點地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -483,8 +488,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -493,8 +501,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -503,8 +514,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -514,71 +528,69 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     景點介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="tab-pane fade "
-                                                    id="nav-food"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-food-tab"
-                                                >
+                                                <div class="tab-pane fade " id="nav-food" role="tabpanel"
+                                                    aria-labelledby="nav-food-tab">
                                                     <div class="card">
                                                         <div class="card-header">
                                                             美食餐廳機台號碼#1
@@ -588,7 +600,9 @@
                                                                 <div class="col-5">
                                                                     <a href="#" class="">
                                                                         <figure class="figure">
-                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的現在位置地圖">
+                                                                            <img src="./img/img_selection.png"
+                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                alt="上傳的現在位置地圖">
                                                                             <figcaption class="figure-caption">
                                                                                 現在位置地圖
                                                                             </figcaption>
@@ -597,7 +611,8 @@
                                                                 </div>
                                                                 <div class="col-7">
                                                                     <div class="mb-3 row">
-                                                                        <label for="" class="col-sm-2 col-form-label text-end">
+                                                                        <label for=""
+                                                                            class="col-2 col-form-label text-end">
                                                                             現在位置
                                                                         </label>
                                                                         <div class="col-sm-10">
@@ -617,8 +632,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的餐廳地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的餐廳地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 餐廳地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -627,8 +645,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -637,8 +658,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -647,8 +671,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -658,59 +685,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -725,8 +754,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的餐廳地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的餐廳地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 餐廳地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -735,8 +767,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -745,8 +780,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -755,8 +793,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -766,59 +807,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -833,8 +876,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的餐廳地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的餐廳地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 餐廳地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -843,8 +889,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -853,8 +902,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -863,8 +915,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -874,59 +929,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     餐廳介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -934,12 +991,8 @@
                                                     </div>
                                                 </div>
                                                 <!-- 住宿 -->
-                                                <div
-                                                    class="tab-pane fade "
-                                                    id="nav-hotel"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-hotel-tab"
-                                                >
+                                                <div class="tab-pane fade " id="nav-hotel" role="tabpanel"
+                                                    aria-labelledby="nav-hotel-tab">
                                                     <div class="card">
                                                         <div class="card-header">
                                                             住宿推薦機台號碼#1
@@ -949,7 +1002,9 @@
                                                                 <div class="col-5">
                                                                     <a href="#" class="">
                                                                         <figure class="figure">
-                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的現在位置地圖">
+                                                                            <img src="./img/img_selection.png"
+                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                alt="上傳的現在位置地圖">
                                                                             <figcaption class="figure-caption">
                                                                                 現在位置地圖
                                                                             </figcaption>
@@ -958,7 +1013,8 @@
                                                                 </div>
                                                                 <div class="col-7">
                                                                     <div class="mb-3 row">
-                                                                        <label for="" class="col-sm-2 col-form-label text-end">
+                                                                        <label for=""
+                                                                            class="col-2 col-form-label text-end">
                                                                             現在位置
                                                                         </label>
                                                                         <div class="col-sm-10">
@@ -978,8 +1034,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的住宿地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的住宿地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 住宿地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -988,8 +1047,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -998,8 +1060,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1008,8 +1073,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1019,59 +1087,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1086,8 +1156,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的餐廳地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的餐廳地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 住宿地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1096,8 +1169,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1106,8 +1182,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1116,8 +1195,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1127,59 +1209,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1194,8 +1278,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的住宿地圖">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的住宿地圖">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 住宿地圖
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1204,8 +1291,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片1">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片1">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片1
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1214,8 +1304,11 @@
                                                                                 <div class="col pe-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片2">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片2">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片2
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1224,8 +1317,11 @@
                                                                                 <div class="col ps-1">
                                                                                     <a href="#" class="">
                                                                                         <figure class="figure">
-                                                                                            <img src="./img/img_selection.png" class="figure-img img-fluid img-thumbnail" alt="上傳的照片3">
-                                                                                            <figcaption class="figure-caption">
+                                                                                            <img src="./img/img_selection.png"
+                                                                                                class="figure-img img-fluid img-thumbnail"
+                                                                                                alt="上傳的照片3">
+                                                                                            <figcaption
+                                                                                                class="figure-caption">
                                                                                                 照片3
                                                                                             </figcaption>
                                                                                         </figure>
@@ -1235,59 +1331,61 @@
                                                                         </div>
                                                                         <div class="col-7">
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿名稱
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿地址
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input type="" class="form-control" id="">
+                                                                                    <input type="" class="form-control"
+                                                                                        id="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     住宿介紹
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                                                    <textarea class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     離此距離
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：公里"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：公里">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mb-3 row">
-                                                                                <label for="" class="col-sm-2 col-form-label text-end">
+                                                                                <label for=""
+                                                                                    class="col-2 col-form-label text-end">
                                                                                     步行時間
                                                                                 </label>
                                                                                 <div class="col-sm-10">
-                                                                                    <input
-                                                                                        type=""
-                                                                                        class="form-control"
-                                                                                        id=""
-                                                                                        placeholder="單位：分鐘"
-                                                                                    >
+                                                                                    <input type="" class="form-control"
+                                                                                        id="" placeholder="單位：分鐘">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="border-top pt-3 text-end">
-                                                                        <button type="button" class="btn btn-primary">儲存</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">儲存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1309,47 +1407,33 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-<div
-    class="modal fade"
-    id="staticBackdrop"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
->
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">選擇播放清單</h5>
-            </div>
-            <div class="modal-body">
-                <button
-                    type="button"
-                    class="btn btn-outline-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                >
-                    嘉義市政宣播放清單_1209
-                </button>
-                <button
-                    type="button"
-                    class="btn btn-outline-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                >
-                    月活動播放清單_1211
-                </button>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確定</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">選擇播放清單</h5>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        嘉義市政宣播放清單_1209
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        月活動播放清單_1211
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確定</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<script src="./js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
