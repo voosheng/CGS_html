@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGSMonitoring Graphs</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="d-flex flex-column justify-content-between">
+            <div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-3">
+                    <span class="fs-1">CGS</span>
+                    <span class="">即時監控系統</span>
+                </div>
+                <a href="CGSMonitoringGraphs.html"
+                    class="list-group-item list-group-item-action ps-5 py-2 bg_primary active_k"
+                    aria-current="true">CGS即時監控狀態</a>
+                <a href="CGSlist.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">CGS列表</a>
+                <a href="CGSManagement.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">CGS管理</a>
+                <a href="UploadInfoManagement.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">內容上傳管理</a>
+                <a href="UserManagement.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">使用者管理</a>
+                <a href="SystemInfo.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">系統資訊</a>
+                <a href="WebLog.html" class="list-group-item list-group-item-action ps-5 py-2"
+                    aria-current="true">系統使用紀錄</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="container-fluid shadow-sm">
+                <div class="nav justify-content-end">
+                    <div class="dropdown">
+                        <a class="nav-link p-0 py-1 text_primary dropdown-toggle" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">修改密碼</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">登出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-2 h_100">
+            <nav class="navbar bg-white border-bottom">
+                <div class="container-fluid justify-content-end">
+                    <!-- <form class="">
+                        <button class="btn btn-outline-primary" type="button">
+                            <i class="bi bi-chevron-left"></i>返回</button>
+                    </form> -->
+                    <div class="d-flex ">
+                        <div class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </div>
+                        <!-- <button class="btn btn-primary ms-5" type="button">新增</button> -->
+                        <!-- <button class="btn btn-secondary ms-2" type="button">編輯</button> -->
+                    </div>
+                </div>
+            </nav>
+            <div class="mainContent pb-3">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <!-- 即時監控地圖 -->
+                            <div class="graphs">
+                                <img src="./img/graphs_img.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2 ps-0">
+                            <!-- 即時監控狀態 -->
+                            <div class="">
+                                <ul>
+                                    <li class="text-success">連線</li>
+                                    <li class="text-warning">中斷</li>
+                                    <li class="text-danger">告警</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
