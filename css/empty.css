@@ -1,0 +1,19 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: #ffffff;
+}
+.empty_info{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.empty_content{
+    width: 600px;
+    height: 444px;
+    background: url("../img/empty.png") no-repeat center ;
+    margin-bottom: 2%;
+}

@@ -124,3 +124,7 @@ body{
 .modal_xxl{
     max-width: 1600px;
 }
+.empty_content{
+    margin-top: 6%;
+    background: url();
+}
